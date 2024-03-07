@@ -61,7 +61,7 @@ function App() {
 
       </main>
       <footer>
-        <p>My React App</p>
+       
       </footer>
     </div>
   );
