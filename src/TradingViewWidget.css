@@ -1,0 +1,20 @@
+/* TradingViewWidget.css */
+
+.tradingview-widget-container {
+    margin-top: 20px; /* Increase the top margin to create some space */
+    width: 75%; /* Set the width to 75% */
+    margin-left: auto; /* Center the widget horizontally */
+    margin-right: auto; /* Center the widget horizontally */
+  }
+  
+  .tradingview-widget-container__widget {
+    /* Add any additional styles for the widget container */
+    left: 75%;
+  }
+  
+ 
+  /* Adjust the position of the CryptoCard */
+  .crypto-card {
+    margin-top: 20px; /* Increase the top margin */
+  }
+  

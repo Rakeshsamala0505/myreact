@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  background-color: #f2f3f4; /* Black background for the body */
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff; /* White background for the navbar */
+  color: black; /* Change text color to black */
+  padding: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 30px; /* Adjust height as needed */
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.navbar-links ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mobile Styles */
+.menu-toggle {
+  display: none; /* Hide the toggle button by default */
+  cursor: pointer;
+}
+
+.header__sm-menu {
+  display: none; /* Hide the mobile menu by default */
+
+}
+
+.header__sm-menu--active {
+  display: none; /* Display the mobile menu when active */
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  text-decoration-color:#fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 13px;
+  display: inline-block;
+  margin-bottom: 10px; /* Add margin at the bottom of each button */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f2f3f4; /* Black background for the body */
+  }
+  .navbar-links ul {
+    display: none; /* Hide the navbar links on smaller screens */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    bottom: 1000px;
+    background-color: #ffffff;
+    text-align: left; /* Align items to the left */
+    padding-left: 0; /* Remove any default padding */
+  }
+
+  .navbar-links.active ul {
+    display: block; /* Display the navbar links when active */
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 1rem; /* Decreased font size */
+    width: 20px; /* Adjust width to make the button smaller */
+    height: 20px; /* Adjust height to make the button smaller */
+    position: absolute; /* Set position to absolute */
+    top: 10px; /* Adjust top position */
+    right: 50px; /* Adjust right position */
+  }
+
+  .header__sm-menu {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    background-color: white;
+  }
+
+  .header__sm-menu--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header__sm-menu-content {
+    padding: 20px;
+  }
+
+  .header__sm-menu-links {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .header__sm-menu-link a {
+    display: block;
+    text-decoration: none;
+    color: #fffdfd;
+    padding: 10px 0;
+  }
+
+  .header__sm-menu-link a:hover {
+    color: #0f86ed;
+  }
+
+  /* Vertical display of menu items */
+  .navbar-links ul li {
+    display: block; /* Change display to block for vertical alignment */
+    margin-right: 0; /* Remove margin-right for vertical alignment */
+    padding-left: 20px;
+    margin-bottom: 10px; /* Add space between items */
+    font-family: inherit;
+  font-weight: 600;
+  }
+}
+
+
+
