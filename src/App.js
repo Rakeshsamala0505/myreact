@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import CryptoCard from './CryptoCard';
-import './CryptoCard.css';
 
 import TradingViewWidget from './TradingViewWidget';
 import './TradingViewWidget.css';
