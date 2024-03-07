@@ -19,7 +19,7 @@ function App() {
   };
 
   const handleNavigation = (hash) => {
-    window.location.hash = hash; // Update the URL hash to simulate navigation without reloading the page
+    window.location.hash = hash; 
     closeNavbar();
   };
 
@@ -56,16 +56,12 @@ function App() {
         </div>
       </header>
       <main>
-        {/* Your main content */}
-        <div className="crypto-cards-container">
-          {/* Add more CryptoCard components as needed */}
-        </div> 
-        <TradingViewWidget />
         
-{/* Example usage of the CryptoCard component */}
+        <TradingViewWidget />
+
       </main>
       <footer>
-        <p>© 2024 My React App</p>
+        <p>My React App</p>
       </footer>
     </div>
   );
