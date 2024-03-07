@@ -1,20 +1,20 @@
 /* TradingViewWidget.css */
 
 .tradingview-widget-container {
-    margin-top: 20px; 
+    margin-top: 60px; 
     width: 75%; 
     margin-left: auto; 
     margin-right: auto; 
   }
   
   .tradingview-widget-container__widget {
-    
+    width: 50%;
     left: 75%;
   }
   
  
   
   .crypto-card {
-    margin-top: 20px; 
+    margin-top: 300px; 
   }
   
